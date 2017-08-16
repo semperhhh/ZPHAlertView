@@ -16,6 +16,7 @@
 		DA4A4DD51F384CCD00008A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4A4DD31F384CCD00008A43 /* LaunchScreen.storyboard */; };
 		DA4A4DDE1F394F7000008A43 /* ZPHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A4DDD1F394F7000008A43 /* ZPHAlertView.m */; };
 		DAC829841F39A94D0054E1D0 /* ZPHAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC829831F39A94D0054E1D0 /* ZPHAlertAction.m */; };
+		DAFAFCDB1F43F14F0015F946 /* ZPHAlertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFAFCDA1F43F14F0015F946 /* ZPHAlertButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		DA4A4DDD1F394F7000008A43 /* ZPHAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPHAlertView.m; sourceTree = "<group>"; };
 		DAC829821F39A94D0054E1D0 /* ZPHAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPHAlertAction.h; sourceTree = "<group>"; };
 		DAC829831F39A94D0054E1D0 /* ZPHAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPHAlertAction.m; sourceTree = "<group>"; };
+		DAFAFCD91F43F14F0015F946 /* ZPHAlertButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPHAlertButton.h; sourceTree = "<group>"; };
+		DAFAFCDA1F43F14F0015F946 /* ZPHAlertButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPHAlertButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				DA4A4DDD1F394F7000008A43 /* ZPHAlertView.m */,
 				DAC829821F39A94D0054E1D0 /* ZPHAlertAction.h */,
 				DAC829831F39A94D0054E1D0 /* ZPHAlertAction.m */,
+				DAFAFCD91F43F14F0015F946 /* ZPHAlertButton.h */,
+				DAFAFCDA1F43F14F0015F946 /* ZPHAlertButton.m */,
 			);
 			path = ZPHAlertView;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			files = (
 				DA4A4DCA1F384CCD00008A43 /* ViewController.m in Sources */,
 				DA4A4DC71F384CCD00008A43 /* AppDelegate.m in Sources */,
+				DAFAFCDB1F43F14F0015F946 /* ZPHAlertButton.m in Sources */,
 				DA4A4DD01F384CCD00008A43 /* ZPHAlertView.xcdatamodeld in Sources */,
 				DAC829841F39A94D0054E1D0 /* ZPHAlertAction.m in Sources */,
 				DA4A4DC41F384CCD00008A43 /* main.m in Sources */,

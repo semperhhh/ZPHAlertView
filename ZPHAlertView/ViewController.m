@@ -12,13 +12,15 @@
 @interface ViewController ()
 
 @property (nonatomic,strong)UIButton *showButton;
+@property (nonatomic,strong)ZPHAlertView *alertView;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
     _showButton = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     _showButton.backgroundColor = [UIColor blackColor];
     [self.view addSubview:_showButton];
@@ -28,8 +30,25 @@
 
 -(void)showButtonClick:(UIButton *)button {
     
-    ZPHAlertView *alert = [[ZPHAlertView alloc]initWithAlartView];
-    [self.view addSubview:alert];
+    ZPHAlertView *alert = [[ZPHAlertView alloc]initWithAlartViewTitle:@"title test" message:nil];
+    _alertView = alert;
+    
+    UIButton *alert1 = [[UIButton alloc]init];
+    alert1.backgroundColor = [UIColor greenColor];
+    [alert1 setTitle:@"test1" forState:UIControlStateNormal];
+    [alert1 addTarget:self action:@selector(alert1Action) forControlEvents:UIControlEventTouchUpInside];
+    [alert addButton:alert1];
+    
+    [alert addZPHAlertButtonWithTitle:@"test2" handle:^(UIButton *button) {
+        
+        NSLog(@"test2");
+    }];
+}
+
+-(void)alert1Action {
+    
+    NSLog(@"test1");
+    [_alertView dissView];
 }
 
 

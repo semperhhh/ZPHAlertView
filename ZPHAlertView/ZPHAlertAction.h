@@ -8,6 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZPHAlertAction : UIView
+@protocol ZPHAlertActionDelegate <NSObject>
 
+@optional
+-(void)zphAlertAcitionDiss;
+@end
+
+@interface ZPHAlertAction : UIView
+@property (nonatomic,weak)id<ZPHAlertActionDelegate> delegate;
+/**
+ 标题文本
+ */
+@property (nonatomic,strong)NSString *title;
+/**
+ 内容文本
+ */
+@property (nonatomic,strong)NSString *message;
+/**
+ 添加自定义按钮
+ */
+-(void)addButton:(UIButton *)button;
+/**
+ 添加默认按钮
+
+ @param title 文字
+ @param handleBlock 回调
+ */
+-(void)addZPHAlertButtonWithTitle:(NSString *)title handle:(void(^)(UIButton *button))handleBlock;
 @end
