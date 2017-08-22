@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6CB46A812B0616B07D6E103B0D1830317757B9A2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "63CCFD026248258201C7F9789B2100F2D4D21319" : 9223372036854775807,
+    "6CB46A812B0616B07D6E103B0D1830317757B9A2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E2B8AF6C-E871-4CBB-BD42-16B5E72AF1B8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "63CCFD026248258201C7F9789B2100F2D4D21319" : "",
+    "6CB46A812B0616B07D6E103B0D1830317757B9A2" : "ZPHAlertView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ZPHAlertView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ZPHAlertView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zphui5409\/Weather1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "63CCFD026248258201C7F9789B2100F2D4D21319"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zphui5409\/ZPHAlertView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6CB46A812B0616B07D6E103B0D1830317757B9A2"
+    }
+  ]
+}

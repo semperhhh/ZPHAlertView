@@ -30,25 +30,18 @@
 
 -(void)showButtonClick:(UIButton *)button {
     
-    ZPHAlertView *alert = [[ZPHAlertView alloc]initWithAlartViewTitle:@"title test" message:nil];
+    ZPHAlertView *alert = [[ZPHAlertView alloc]initWithalertViewTitle:@"title test" message:@"message test"];
     _alertView = alert;
     
-    UIButton *alert1 = [[UIButton alloc]init];
-    alert1.backgroundColor = [UIColor greenColor];
-    [alert1 setTitle:@"test1" forState:UIControlStateNormal];
-    [alert1 addTarget:self action:@selector(alert1Action) forControlEvents:UIControlEventTouchUpInside];
-    [alert addButton:alert1];
+    [alert addZPHAlertButtonWithTitle:@"test1" color:ZPHButtonColorGreen handle:^(UIButton *button) {
+        
+        NSLog(@"test1");
+    }];
     
-    [alert addZPHAlertButtonWithTitle:@"test2" handle:^(UIButton *button) {
+    [alert addZPHAlertButtonWithTitle:@"test2" color:ZPHButtonColorYellow handle:^(UIButton *button) {
         
         NSLog(@"test2");
     }];
-}
-
--(void)alert1Action {
-    
-    NSLog(@"test1");
-    [_alertView dissView];
 }
 
 

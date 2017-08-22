@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZPHAlertHeader.h"
 
 @protocol ZPHAlertActionDelegate <NSObject>
 
@@ -25,6 +26,10 @@
  */
 @property (nonatomic,strong)NSString *message;
 /**
+ 输入框占位符
+ */
+@property (nonatomic,strong)NSString *placeholder;
+/**
  添加自定义按钮
  */
 -(void)addButton:(UIButton *)button;
@@ -32,7 +37,8 @@
  添加默认按钮
 
  @param title 文字
+ @param buttonColor 按钮颜色
  @param handleBlock 回调
  */
--(void)addZPHAlertButtonWithTitle:(NSString *)title handle:(void(^)(UIButton *button))handleBlock;
+-(void)addZPHAlertButtonWithTitle:(NSString *)title color:(ZPHButtonColor)buttonColor handle:(void(^)(UIButton *button))handleBlock;
 @end

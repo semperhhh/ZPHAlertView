@@ -15,11 +15,7 @@
     self = [super init];
     
     if (self) {
-        
-        self.backgroundColor = [UIColor whiteColor];
-        [self.layer setBorderColor:[UIColor grayColor].CGColor];
-        [self.layer setBorderWidth:0.5];
-        [self.layer setMasksToBounds:YES];
+
     }
     
     return self;

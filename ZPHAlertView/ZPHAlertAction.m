@@ -8,8 +8,9 @@
 
 #import "ZPHAlertAction.h"
 #import "ZPHAlertButton.h"
+#import "ZPHAlertTextView.h"
 
-@interface ZPHAlertAction ()
+@interface ZPHAlertAction ()<UITextViewDelegate>
 /**
  标题
  */
@@ -22,7 +23,11 @@
  子控件按钮数组
  */
 @property (nonatomic,strong)NSMutableArray *buttonArray;
-@property (nonatomic,strong)void(^actionBlock)(UIButton *button);
+/**
+ 输入框
+ */
+@property (nonatomic,strong)ZPHAlertTextView *textView;
+
 @end
 
 @implementation ZPHAlertAction
@@ -33,7 +38,6 @@
     
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
-        [self addSubview:self.alertTitleLabel];
     }
     
     return self;
@@ -53,6 +57,7 @@
     
     if (title.length != 0) {
         
+        [self addSubview:self.alertTitleLabel];
         _alertTitleLabel.text = title;
     }
 }
@@ -69,11 +74,37 @@
     }
 }
 
--(void)addZPHAlertButtonWithTitle:(NSString *)title handle:(void(^)(UIButton *button))handleBlock {
+//占位符赋值
+-(void)setPlaceholder:(NSString *)placeholder {
+    
+    _placeholder = placeholder;
+    
+    if (placeholder) {
+        
+        [self addSubview:self.textView];
+        self.textView.placeholder = placeholder;
+    }
+}
+
+-(void)addZPHAlertButtonWithTitle:(NSString *)title color:(ZPHButtonColor)buttonColor handle:(void(^)(UIButton *button))handleBlock {
     
     ZPHAlertButton *button = [[ZPHAlertButton alloc]init];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    switch (buttonColor) {
+        case ZPHButtonColorYellow:
+            [button setBackgroundColor:[UIColor colorWithRed:250.0/255.0 green:220.0/255.0 blue:82.0/255.0 alpha:1.0]];
+            break;
+        case ZPHButtonColorGreen:
+            [button setBackgroundColor:[UIColor colorWithRed:80.0/255.0 green:190.0/255.0 blue:120.0/255.0 alpha:1.0]];
+            break;
+        case ZPHButtonColorGray:
+        default:
+            [button setBackgroundColor:[UIColor colorWithRed:235.0/255.0 green:235.0/255.0 blue:235.0/255.0 alpha:1.0]];
+            break;
+    }
+
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     button.alertButtonBlock = handleBlock;
     [self.buttonArray addObject:button];
@@ -105,7 +136,7 @@
             
             [self.buttonArray enumerateObjectsUsingBlock:^(UIButton *  _Nonnull button, NSUInteger idx, BOOL * _Nonnull stop) {
                 
-                button.frame = CGRectMake(idx *self.bounds.size.width/2, self.frame.size.height -30, self.bounds.size.width /self.buttonArray.count, 30);
+                button.frame = CGRectMake(idx *self.bounds.size.width/2, self.frame.size.height -50, self.bounds.size.width /self.buttonArray.count, 50);
             }];
         }
             break;
@@ -116,6 +147,20 @@
     
 }
 
+#pragma mark --UITextViewDelegate
+-(void)textViewDidBeginEditing:(UITextView *)textView {
+    
+    self.textView.placeholderLabel.alpha = 0;
+}
+
+-(void)textViewDidEndEditing:(UITextView *)textView {
+    
+    if (self.textView.text.length == 0) {
+        
+        self.textView.placeholderLabel.alpha = 1;
+    }
+}
+
 #pragma mark --lazy loading
 -(UILabel *)alertTitleLabel {   //标题
     
@@ -123,8 +168,8 @@
         _alertTitleLabel = [[UILabel alloc]init];
         _alertTitleLabel.backgroundColor = [UIColor whiteColor];
         _alertTitleLabel.textAlignment = NSTextAlignmentCenter;
-        _alertTitleLabel.font = [UIFont systemFontOfSize:20.0 weight:10.0];
-        _alertTitleLabel.frame = CGRectMake(0, 0, self.frame.size.width, 30);
+        _alertTitleLabel.font = [UIFont systemFontOfSize:20.0 weight:0.2];
+        _alertTitleLabel.frame = CGRectMake(0, 0, self.frame.size.width, 40);
     }
     return _alertTitleLabel;
 }
@@ -135,7 +180,7 @@
         _messageLabel = [[UILabel alloc]init];
         _messageLabel.backgroundColor = [UIColor whiteColor];
         _messageLabel.textAlignment = NSTextAlignmentCenter;
-        _messageLabel.frame = CGRectMake(0, CGRectGetMaxY(self.alertTitleLabel.frame) +5, self.frame.size.width, self.frame.size.height - self.alertTitleLabel.frame.size.height -5 - 30 - 5);
+        _messageLabel.frame = CGRectMake(0, CGRectGetMaxY(self.alertTitleLabel.frame) +5, self.frame.size.width, self.frame.size.height - self.alertTitleLabel.frame.size.height -5 - 50 - 5);
     }
     return _messageLabel;
 }
@@ -146,6 +191,16 @@
         _buttonArray = [NSMutableArray array];
     }
     return _buttonArray;
+}
+
+-(UITextView *)textView {
+    
+    if (!_textView) {
+        _textView = [[ZPHAlertTextView alloc]initWithFrame:CGRectMake(10, CGRectGetMaxY(self.alertTitleLabel.frame) +5, self.frame.size.width -20, self.frame.size.height - self.alertTitleLabel.frame.size.height -5 - 30 - 5)];
+        _textView.backgroundColor = [UIColor whiteColor];
+        _textView.delegate = self;
+    }
+    return _textView;
 }
 
 @end
