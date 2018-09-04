@@ -49,11 +49,17 @@
  */
 -(instancetype)initWithalertViewTitle:(NSString *)title textViewPlaceholder:(NSString *)placeholder;
 
-//初始化 - 标题 尺寸 占位符
+//初始化 - 标题 图片
+-(instancetype)initWithalertViewTitle:(NSString *)title image:(UIImage *)image;
+
+//初始化 - 标题 尺寸 文字
 -(instancetype)initWithalertViewSize:(CGSize)alertSize title:(NSString *)title message:(NSString *)message;
 
-//初始化 - 标题 文字 尺寸
+//初始化 - 标题 尺寸 占位符
 -(instancetype)initWithalertViewSize:(CGSize)alertSize title:(NSString *)title placeholder:(NSString *)placeholder;
+
+//初始化 - 标题 尺寸 图片
+-(instancetype)initWithalertViewSize:(CGSize)alertSize title:(NSString *)title message:(NSString *)message image:(UIImage *)image;
 /**
  添加自定义按钮
  
@@ -67,6 +73,10 @@
  @param handleBlock 回调
  */
 -(void)addZPHAlertButtonWithTitle:(NSString *)title color:(ZPHButtonColor)buttonColor handle:(void(^)(UIButton *button))handleBlock;
+/**
+ 展示视图
+ */
+-(void)showView;
 /**
  移除视图
  */

@@ -9,41 +9,101 @@
 #import "ViewController.h"
 #import "ZPHAlertView.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,strong)UIButton *showButton;
-@property (nonatomic,strong)ZPHAlertView *alertView;
-
+@property (nonatomic,strong)UITableView *tableView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    _showButton = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    _showButton.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:_showButton];
-    [_showButton setTitle:@"show" forState:UIControlStateNormal];
-    [_showButton addTarget:self action:@selector(showButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    [self.view addSubview:_tableView];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
--(void)showButtonClick:(UIButton *)button {
+#pragma mark --UITableView
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    ZPHAlertView *alert = [[ZPHAlertView alloc]initWithalertViewTitle:@"title test" message:@"message test"];
-    _alertView = alert;
-    
-    [alert addZPHAlertButtonWithTitle:@"test1" color:ZPHButtonColorGreen handle:^(UIButton *button) {
-        
-        NSLog(@"test1");
-    }];
-    
-    [alert addZPHAlertButtonWithTitle:@"test2" color:ZPHButtonColorYellow handle:^(UIButton *button) {
-        
-        NSLog(@"test2");
-    }];
+    return 5;
 }
 
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(20, 0, cell.contentView.frame.size.width -20, cell.contentView.frame.size.height)];
+    [cell.contentView addSubview:label];
+    switch (indexPath.row) {
+        case 0: {
+            label.text = @"text";
+        }
+            break;
+        case 1: {
+            label.text = @"picture";
+        }
+            break;
+        case 2: {
+            label.text = @"place";
+        }
+            break;
+        default:
+            break;
+    }
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    switch (indexPath.row) {
+        case 0: {//text
+            
+            ZPHAlertView *alert = [[ZPHAlertView alloc]initWithalertViewTitle:@"title test" message:@"message test"];
+            
+            [alert addZPHAlertButtonWithTitle:@"test1" color:ZPHButtonColorGreen handle:^(UIButton *button) {
+                
+                NSLog(@"test1");
+            }];
+            
+            [alert addZPHAlertButtonWithTitle:@"test2" color:ZPHButtonColorYellow handle:^(UIButton *button) {
+                
+                NSLog(@"test2");
+            }];
+            
+            [alert showView];
+        }
+            break;
+            
+        case 1: {//picture
+            
+            ZPHAlertView *alert = [[ZPHAlertView alloc]initWithalertViewTitle:@"title Test" image:[UIImage imageNamed:@"timg"]];
+            
+            [alert showView];
+        }
+            break;
+            
+        case 2: {//place
+            
+            ZPHAlertView *alert = [[ZPHAlertView alloc]initWithalertViewTitle:@"place" textViewPlaceholder:@"test"];
+            [alert addZPHAlertButtonWithTitle:@"yes" color:ZPHButtonColorGray handle:^(UIButton *button) {
+                NSLog(@"yes");
+            }];
+            
+            [alert showView];
+        }
+            break;
+        default:
+            break;
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

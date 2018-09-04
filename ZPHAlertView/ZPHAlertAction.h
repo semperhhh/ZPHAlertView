@@ -30,6 +30,10 @@
  */
 @property (nonatomic,strong)NSString *placeholder;
 /**
+ 图片
+ */
+@property (nonatomic,strong)UIImage *image;
+/**
  添加自定义按钮
  */
 -(void)addButton:(UIButton *)button;

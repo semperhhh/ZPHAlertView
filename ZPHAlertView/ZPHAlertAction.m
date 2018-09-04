@@ -27,7 +27,10 @@
  输入框
  */
 @property (nonatomic,strong)ZPHAlertTextView *textView;
-
+/**
+ 图片框
+ */
+@property (nonatomic,strong)UIImageView *imageView;
 @end
 
 @implementation ZPHAlertAction
@@ -83,6 +86,17 @@
         
         [self addSubview:self.textView];
         self.textView.placeholder = placeholder;
+    }
+}
+
+//图片赋值
+-(void)setImage:(UIImage *)image {
+    
+    _image = image;
+    
+    if (image) {
+        [self addSubview:self.imageView];
+        self.imageView.image = image;
     }
 }
 
@@ -201,6 +215,16 @@
         _textView.delegate = self;
     }
     return _textView;
+}
+
+-(UIImageView *)imageView {
+    
+    if (!_imageView) {
+        _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.alertTitleLabel.frame) +5, self.frame.size.width, self.frame.size.height - self.alertTitleLabel.frame.size.height -5 - 50 - 5)];
+        _imageView.contentMode = UIViewContentModeScaleAspectFit;
+        _imageView.backgroundColor = [UIColor yellowColor];
+    }
+    return _imageView;
 }
 
 @end
