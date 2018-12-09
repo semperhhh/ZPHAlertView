@@ -157,6 +157,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C3CF1D92140C3D0008B53D0 /* ZPHAlert */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A4DDC1F394F7000008A43 /* ZPHAlertView.h */,
+				DA4A4DDD1F394F7000008A43 /* ZPHAlertView.m */,
+				DAC829821F39A94D0054E1D0 /* ZPHAlertAction.h */,
+				DAC829831F39A94D0054E1D0 /* ZPHAlertAction.m */,
+				DA6C5CD51F4AAE3700B58437 /* ZPHAlertTextView.h */,
+				DA6C5CD61F4AAE3700B58437 /* ZPHAlertTextView.m */,
+				DA6C5CD81F4AB95A00B58437 /* ZPHAlertButton.h */,
+				DA6C5CD91F4AB95A00B58437 /* ZPHAlertButton.m */,
+				DA6C5CDB1F4AD4E400B58437 /* ZPHAlertHeader.h */,
+			);
+			path = ZPHAlert;
+			sourceTree = "<group>";
+		};
 		DA4A4DB61F384CCD00008A43 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +201,7 @@
 		DA4A4DC11F384CCD00008A43 /* ZPHAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				7C3CF1D92140C3D0008B53D0 /* ZPHAlert */,
 				DA4A4DC51F384CCD00008A43 /* AppDelegate.h */,
 				DA4A4DC61F384CCD00008A43 /* AppDelegate.m */,
 				DA4A4DC81F384CCD00008A43 /* ViewController.h */,
@@ -195,15 +212,6 @@
 				DA4A4DD61F384CCD00008A43 /* Info.plist */,
 				DA4A4DCE1F384CCD00008A43 /* ZPHAlertView.xcdatamodeld */,
 				DA4A4DC21F384CCD00008A43 /* Supporting Files */,
-				DA4A4DDC1F394F7000008A43 /* ZPHAlertView.h */,
-				DA4A4DDD1F394F7000008A43 /* ZPHAlertView.m */,
-				DAC829821F39A94D0054E1D0 /* ZPHAlertAction.h */,
-				DAC829831F39A94D0054E1D0 /* ZPHAlertAction.m */,
-				DA6C5CD51F4AAE3700B58437 /* ZPHAlertTextView.h */,
-				DA6C5CD61F4AAE3700B58437 /* ZPHAlertTextView.m */,
-				DA6C5CD81F4AB95A00B58437 /* ZPHAlertButton.h */,
-				DA6C5CD91F4AB95A00B58437 /* ZPHAlertButton.m */,
-				DA6C5CDB1F4AD4E400B58437 /* ZPHAlertHeader.h */,
 			);
 			path = ZPHAlertView;
 			sourceTree = "<group>";

@@ -86,6 +86,10 @@
             
             ZPHAlertView *alert = [[ZPHAlertView alloc]initWithalertViewTitle:@"title Test" image:[UIImage imageNamed:@"timg"]];
             
+            [alert addZPHAlertButtonWithTitle:@"确定" color:ZPHButtonColorYellow handle:^(UIButton *button) {
+                NSLog(@"点击了确定");
+            }];
+            
             [alert showView];
         }
             break;

@@ -222,7 +222,7 @@
     if (!_imageView) {
         _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.alertTitleLabel.frame) +5, self.frame.size.width, self.frame.size.height - self.alertTitleLabel.frame.size.height -5 - 50 - 5)];
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
-        _imageView.backgroundColor = [UIColor yellowColor];
+        _imageView.backgroundColor = [UIColor whiteColor];
     }
     return _imageView;
 }
