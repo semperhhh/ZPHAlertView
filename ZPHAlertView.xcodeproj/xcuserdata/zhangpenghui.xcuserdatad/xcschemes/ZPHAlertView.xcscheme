@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DAF9A50E21BA2A6E00EE6792"
+               BuildableName = "ZPHAlertViewFrameWorkTests.xctest"
+               BlueprintName = "ZPHAlertViewFrameWorkTests"
+               ReferencedContainer = "container:ZPHAlertView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

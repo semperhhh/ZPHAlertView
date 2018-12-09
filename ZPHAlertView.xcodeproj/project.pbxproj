@@ -18,7 +18,66 @@
 		DA6C5CD71F4AAE3700B58437 /* ZPHAlertTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C5CD61F4AAE3700B58437 /* ZPHAlertTextView.m */; };
 		DA6C5CDA1F4AB95A00B58437 /* ZPHAlertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C5CD91F4AB95A00B58437 /* ZPHAlertButton.m */; };
 		DAC829841F39A94D0054E1D0 /* ZPHAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC829831F39A94D0054E1D0 /* ZPHAlertAction.m */; };
+		DAF9A4FD21BA2A1C00EE6792 /* ZPHAlertVIewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A4FC21BA2A1C00EE6792 /* ZPHAlertVIewFrame.m */; };
+		DAF9A4FE21BA2A1C00EE6792 /* ZPHAlertVIewFrame.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAF9A4FB21BA2A1C00EE6792 /* ZPHAlertVIewFrame.h */; };
+		DAF9A51021BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF9A50721BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework */; };
+		DAF9A51721BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A51621BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests.m */; };
+		DAF9A51921BA2A6E00EE6792 /* ZPHAlertViewFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF9A50921BA2A6E00EE6792 /* ZPHAlertViewFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAF9A51C21BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF9A50721BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework */; };
+		DAF9A51D21BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAF9A50721BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAF9A52721BA2EF900EE6792 /* ZPHAlertViewFrameTest.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF9A52521BA2EF900EE6792 /* ZPHAlertViewFrameTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAF9A52821BA2EF900EE6792 /* ZPHAlertViewFrameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF9A52621BA2EF900EE6792 /* ZPHAlertViewFrameTest.m */; };
+		DAF9A57E21BA3C3000EE6792 /* testIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF9A57D21BA3C3000EE6792 /* testIcon.png */; };
+		DAF9A58321BA408200EE6792 /* ZPHAlertViewFrameBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DAF9A57721BA3BA000EE6792 /* ZPHAlertViewFrameBundle.bundle */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAF9A51121BA2A6E00EE6792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4A4DB71F384CCD00008A43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF9A50621BA2A6E00EE6792;
+			remoteInfo = ZPHAlertViewFrameWork;
+		};
+		DAF9A51321BA2A6E00EE6792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4A4DB71F384CCD00008A43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4A4DBE1F384CCD00008A43;
+			remoteInfo = ZPHAlertView;
+		};
+		DAF9A51A21BA2A6E00EE6792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4A4DB71F384CCD00008A43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF9A50621BA2A6E00EE6792;
+			remoteInfo = ZPHAlertViewFrameWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DAF9A4F721BA2A1C00EE6792 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				DAF9A4FE21BA2A1C00EE6792 /* ZPHAlertVIewFrame.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A52121BA2A6E00EE6792 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DAF9A51D21BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DA4A4DBF1F384CCD00008A43 /* ZPHAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPHAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,10 +100,54 @@
 		DA6C5CDB1F4AD4E400B58437 /* ZPHAlertHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPHAlertHeader.h; sourceTree = "<group>"; };
 		DAC829821F39A94D0054E1D0 /* ZPHAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPHAlertAction.h; sourceTree = "<group>"; };
 		DAC829831F39A94D0054E1D0 /* ZPHAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPHAlertAction.m; sourceTree = "<group>"; };
+		DAF9A4F921BA2A1C00EE6792 /* libZPHAlertVIewFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZPHAlertVIewFrame.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF9A4FB21BA2A1C00EE6792 /* ZPHAlertVIewFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPHAlertVIewFrame.h; sourceTree = "<group>"; };
+		DAF9A4FC21BA2A1C00EE6792 /* ZPHAlertVIewFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPHAlertVIewFrame.m; sourceTree = "<group>"; };
+		DAF9A50721BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZPHAlertViewFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF9A50921BA2A6E00EE6792 /* ZPHAlertViewFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPHAlertViewFrameWork.h; sourceTree = "<group>"; };
+		DAF9A50A21BA2A6E00EE6792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF9A50F21BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZPHAlertViewFrameWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF9A51621BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPHAlertViewFrameWorkTests.m; sourceTree = "<group>"; };
+		DAF9A51821BA2A6E00EE6792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF9A52521BA2EF900EE6792 /* ZPHAlertViewFrameTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPHAlertViewFrameTest.h; sourceTree = "<group>"; };
+		DAF9A52621BA2EF900EE6792 /* ZPHAlertViewFrameTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPHAlertViewFrameTest.m; sourceTree = "<group>"; };
+		DAF9A57721BA3BA000EE6792 /* ZPHAlertViewFrameBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZPHAlertViewFrameBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF9A57921BA3BA000EE6792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF9A57D21BA3C3000EE6792 /* testIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DA4A4DBC1F384CCD00008A43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF9A51C21BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A4F621BA2A1C00EE6792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A50421BA2A6E00EE6792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A50C21BA2A6E00EE6792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF9A51021BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A57421BA3BA000EE6792 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,7 +160,12 @@
 		DA4A4DB61F384CCD00008A43 = {
 			isa = PBXGroup;
 			children = (
+				DAF9A57D21BA3C3000EE6792 /* testIcon.png */,
 				DA4A4DC11F384CCD00008A43 /* ZPHAlertView */,
+				DAF9A4FA21BA2A1C00EE6792 /* ZPHAlertVIewFrame */,
+				DAF9A50821BA2A6E00EE6792 /* ZPHAlertViewFrameWork */,
+				DAF9A51521BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests */,
+				DAF9A57821BA3BA000EE6792 /* ZPHAlertViewFrameBundle */,
 				DA4A4DC01F384CCD00008A43 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				DA4A4DBF1F384CCD00008A43 /* ZPHAlertView.app */,
+				DAF9A4F921BA2A1C00EE6792 /* libZPHAlertVIewFrame.a */,
+				DAF9A50721BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework */,
+				DAF9A50F21BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests.xctest */,
+				DAF9A57721BA3BA000EE6792 /* ZPHAlertViewFrameBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +216,56 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DAF9A4FA21BA2A1C00EE6792 /* ZPHAlertVIewFrame */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9A4FB21BA2A1C00EE6792 /* ZPHAlertVIewFrame.h */,
+				DAF9A4FC21BA2A1C00EE6792 /* ZPHAlertVIewFrame.m */,
+			);
+			path = ZPHAlertVIewFrame;
+			sourceTree = "<group>";
+		};
+		DAF9A50821BA2A6E00EE6792 /* ZPHAlertViewFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9A50921BA2A6E00EE6792 /* ZPHAlertViewFrameWork.h */,
+				DAF9A50A21BA2A6E00EE6792 /* Info.plist */,
+				DAF9A52521BA2EF900EE6792 /* ZPHAlertViewFrameTest.h */,
+				DAF9A52621BA2EF900EE6792 /* ZPHAlertViewFrameTest.m */,
+			);
+			path = ZPHAlertViewFrameWork;
+			sourceTree = "<group>";
+		};
+		DAF9A51521BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9A51621BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests.m */,
+				DAF9A51821BA2A6E00EE6792 /* Info.plist */,
+			);
+			path = ZPHAlertViewFrameWorkTests;
+			sourceTree = "<group>";
+		};
+		DAF9A57821BA3BA000EE6792 /* ZPHAlertViewFrameBundle */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9A57921BA3BA000EE6792 /* Info.plist */,
+			);
+			path = ZPHAlertViewFrameBundle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DAF9A50221BA2A6E00EE6792 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF9A51921BA2A6E00EE6792 /* ZPHAlertViewFrameWork.h in Headers */,
+				DAF9A52721BA2EF900EE6792 /* ZPHAlertViewFrameTest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		DA4A4DBE1F384CCD00008A43 /* ZPHAlertView */ = {
@@ -114,15 +275,88 @@
 				DA4A4DBB1F384CCD00008A43 /* Sources */,
 				DA4A4DBC1F384CCD00008A43 /* Frameworks */,
 				DA4A4DBD1F384CCD00008A43 /* Resources */,
+				DAF9A52121BA2A6E00EE6792 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DAF9A51B21BA2A6E00EE6792 /* PBXTargetDependency */,
 			);
 			name = ZPHAlertView;
 			productName = ZPHAlertView;
 			productReference = DA4A4DBF1F384CCD00008A43 /* ZPHAlertView.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DAF9A4F821BA2A1C00EE6792 /* ZPHAlertVIewFrame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF9A50121BA2A1D00EE6792 /* Build configuration list for PBXNativeTarget "ZPHAlertVIewFrame" */;
+			buildPhases = (
+				DAF9A4F521BA2A1C00EE6792 /* Sources */,
+				DAF9A4F621BA2A1C00EE6792 /* Frameworks */,
+				DAF9A4F721BA2A1C00EE6792 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZPHAlertVIewFrame;
+			productName = ZPHAlertVIewFrame;
+			productReference = DAF9A4F921BA2A1C00EE6792 /* libZPHAlertVIewFrame.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DAF9A50621BA2A6E00EE6792 /* ZPHAlertViewFrameWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF9A51E21BA2A6E00EE6792 /* Build configuration list for PBXNativeTarget "ZPHAlertViewFrameWork" */;
+			buildPhases = (
+				DAF9A50221BA2A6E00EE6792 /* Headers */,
+				DAF9A50321BA2A6E00EE6792 /* Sources */,
+				DAF9A50421BA2A6E00EE6792 /* Frameworks */,
+				DAF9A50521BA2A6E00EE6792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZPHAlertViewFrameWork;
+			productName = ZPHAlertViewFrameWork;
+			productReference = DAF9A50721BA2A6E00EE6792 /* ZPHAlertViewFrameWork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAF9A50E21BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF9A52221BA2A6E00EE6792 /* Build configuration list for PBXNativeTarget "ZPHAlertViewFrameWorkTests" */;
+			buildPhases = (
+				DAF9A50B21BA2A6E00EE6792 /* Sources */,
+				DAF9A50C21BA2A6E00EE6792 /* Frameworks */,
+				DAF9A50D21BA2A6E00EE6792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF9A51221BA2A6E00EE6792 /* PBXTargetDependency */,
+				DAF9A51421BA2A6E00EE6792 /* PBXTargetDependency */,
+			);
+			name = ZPHAlertViewFrameWorkTests;
+			productName = ZPHAlertViewFrameWorkTests;
+			productReference = DAF9A50F21BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAF9A57621BA3BA000EE6792 /* ZPHAlertViewFrameBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF9A57A21BA3BA000EE6792 /* Build configuration list for PBXNativeTarget "ZPHAlertViewFrameBundle" */;
+			buildPhases = (
+				DAF9A57321BA3BA000EE6792 /* Sources */,
+				DAF9A57421BA3BA000EE6792 /* Frameworks */,
+				DAF9A57521BA3BA000EE6792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZPHAlertViewFrameBundle;
+			productName = ZPHAlertViewFrameBundle;
+			productReference = DAF9A57721BA3BA000EE6792 /* ZPHAlertViewFrameBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -135,6 +369,27 @@
 				TargetAttributes = {
 					DA4A4DBE1F384CCD00008A43 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3LQZWC5F6U;
+						ProvisioningStyle = Automatic;
+					};
+					DAF9A4F821BA2A1C00EE6792 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 3LQZWC5F6U;
+						ProvisioningStyle = Automatic;
+					};
+					DAF9A50621BA2A6E00EE6792 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 3LQZWC5F6U;
+						ProvisioningStyle = Automatic;
+					};
+					DAF9A50E21BA2A6E00EE6792 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 3LQZWC5F6U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA4A4DBE1F384CCD00008A43;
+					};
+					DAF9A57621BA3BA000EE6792 = {
+						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = 3LQZWC5F6U;
 						ProvisioningStyle = Automatic;
 					};
@@ -154,6 +409,10 @@
 			projectRoot = "";
 			targets = (
 				DA4A4DBE1F384CCD00008A43 /* ZPHAlertView */,
+				DAF9A4F821BA2A1C00EE6792 /* ZPHAlertVIewFrame */,
+				DAF9A50621BA2A6E00EE6792 /* ZPHAlertViewFrameWork */,
+				DAF9A50E21BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests */,
+				DAF9A57621BA3BA000EE6792 /* ZPHAlertViewFrameBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +425,29 @@
 				DA4A4DD51F384CCD00008A43 /* LaunchScreen.storyboard in Resources */,
 				DA4A4DD21F384CCD00008A43 /* Assets.xcassets in Resources */,
 				DA4A4DCD1F384CCD00008A43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A50521BA2A6E00EE6792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF9A58321BA408200EE6792 /* ZPHAlertViewFrameBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A50D21BA2A6E00EE6792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A57521BA3BA000EE6792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF9A57E21BA3C3000EE6792 /* testIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +469,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAF9A4F521BA2A1C00EE6792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF9A4FD21BA2A1C00EE6792 /* ZPHAlertVIewFrame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A50321BA2A6E00EE6792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF9A52821BA2EF900EE6792 /* ZPHAlertViewFrameTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A50B21BA2A6E00EE6792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF9A51721BA2A6E00EE6792 /* ZPHAlertViewFrameWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF9A57321BA3BA000EE6792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAF9A51221BA2A6E00EE6792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF9A50621BA2A6E00EE6792 /* ZPHAlertViewFrameWork */;
+			targetProxy = DAF9A51121BA2A6E00EE6792 /* PBXContainerItemProxy */;
+		};
+		DAF9A51421BA2A6E00EE6792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4A4DBE1F384CCD00008A43 /* ZPHAlertView */;
+			targetProxy = DAF9A51321BA2A6E00EE6792 /* PBXContainerItemProxy */;
+		};
+		DAF9A51B21BA2A6E00EE6792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF9A50621BA2A6E00EE6792 /* ZPHAlertViewFrameWork */;
+			targetProxy = DAF9A51A21BA2A6E00EE6792 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA4A4DCB1F384CCD00008A43 /* Main.storyboard */ = {
@@ -303,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3LQZWC5F6U;
 				INFOPLIST_FILE = ZPHAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -315,11 +647,268 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3LQZWC5F6U;
 				INFOPLIST_FILE = ZPHAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zph.ZPHAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DAF9A4FF21BA2A1D00EE6792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LQZWC5F6U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAF9A50021BA2A1D00EE6792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LQZWC5F6U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAF9A51F21BA2A6E00EE6792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3LQZWC5F6U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ZPHAlertViewFrameWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = zph.ZPHAlertViewFrameWork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAF9A52021BA2A6E00EE6792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3LQZWC5F6U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ZPHAlertViewFrameWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = zph.ZPHAlertViewFrameWork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAF9A52321BA2A6E00EE6792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LQZWC5F6U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ZPHAlertViewFrameWorkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = zph.ZPHAlertViewFrameWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZPHAlertView.app/ZPHAlertView";
+			};
+			name = Debug;
+		};
+		DAF9A52421BA2A6E00EE6792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LQZWC5F6U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ZPHAlertViewFrameWorkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = zph.ZPHAlertViewFrameWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZPHAlertView.app/ZPHAlertView";
+			};
+			name = Release;
+		};
+		DAF9A57B21BA3BA000EE6792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = 3LQZWC5F6U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ZPHAlertViewFrameBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = zph.ZPHAlertViewFrameBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DAF9A57C21BA3BA000EE6792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = 3LQZWC5F6U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ZPHAlertViewFrameBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = zph.ZPHAlertViewFrameBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -340,6 +929,42 @@
 			buildConfigurations = (
 				DA4A4DDA1F384CCD00008A43 /* Debug */,
 				DA4A4DDB1F384CCD00008A43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF9A50121BA2A1D00EE6792 /* Build configuration list for PBXNativeTarget "ZPHAlertVIewFrame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF9A4FF21BA2A1D00EE6792 /* Debug */,
+				DAF9A50021BA2A1D00EE6792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF9A51E21BA2A6E00EE6792 /* Build configuration list for PBXNativeTarget "ZPHAlertViewFrameWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF9A51F21BA2A6E00EE6792 /* Debug */,
+				DAF9A52021BA2A6E00EE6792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF9A52221BA2A6E00EE6792 /* Build configuration list for PBXNativeTarget "ZPHAlertViewFrameWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF9A52321BA2A6E00EE6792 /* Debug */,
+				DAF9A52421BA2A6E00EE6792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF9A57A21BA3BA000EE6792 /* Build configuration list for PBXNativeTarget "ZPHAlertViewFrameBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF9A57B21BA3BA000EE6792 /* Debug */,
+				DAF9A57C21BA3BA000EE6792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
